@@ -443,17 +443,18 @@ footer .personalInfo span:nth-of-type(2) {
 @media (max-width:480px) {
     nav {
         padding: 1rem;
-        font-size: 0.4rem;
+        font-size: 0.5rem;
+        align-items: center;
     }
 
     .nav-icon {
-        font-size: 0.4rem;
-        margin-left: 0.3rem;
+        font-size: 0.5rem;
+        margin-left: 0.25rem;
     }
 
     nav span:nth-of-type(2) {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     nav a:nth-of-type(2) {
@@ -493,30 +494,34 @@ footer .personalInfo span:nth-of-type(2) {
         align-items: center;
     }
 
-    .introContent .introContentLeft .name {
+    .introContentLeft .name {
         width: auto;
         justify-content: center;
-        font-size: 3rem;
+        font-size: 3.5rem;
+        font-weight: 900;
     }
 
-    .introContentLeft .about {
-        width: 100%;
-        font-size: 0.9rem;
+    .introContentLeft .name span:nth-of-type(2){
+        margin-left: 2rem;
     }
 
-    .logo {
-        width: 7rem;
-        height: 7rem;
-        margin: auto;
-    }
-
-    .logo .inner {
+    .introContentLeft .profession{
         font-size: 1rem;
     }
 
+    .introContentLeft .about {
+        width: 80%;
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+
+    .logo {
+        display: none;
+    }
+
     .introContent .introContentRight span img {
-        width: 20rem;
-        height: 20rem;
+        width: 15rem;
+        height: 15rem;
     }
 
     /* Projects */
@@ -532,28 +537,43 @@ footer .personalInfo span:nth-of-type(2) {
 
     .projects .project {
         width: 100%;
+        flex-direction: column;
+    }
+
+    .project .leftPart{
+        width: 100%;
+    }
+
+    .project .leftPart video{
+        border-radius: 0.5rem;
     }
 
     .project .rightPart {
-        padding-top: 1rem;
+        width: 100%;
+        padding-top: 0;
         padding-bottom: 1rem;
         row-gap: 0.8rem;
     }
 
     .project .rightPart .title {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .project .rightPart .description {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .project .rightPart .technologies{
+        column-gap: 0.5rem;
+        row-gap: 0.2;
     }
 
     .project .rightPart .technologies span {
-        font-size: 0.3rem;
+        font-size: 0.5rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
         border-radius: 0.2rem;
     }
 
