@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 body {
@@ -137,6 +136,10 @@ main .introduction .sidebar {
     width: 90%;
     margin-top: 2rem;
     font-weight: 400;
+}
+
+.about div {
+    display: none;
 }
 
 .logo {
@@ -501,18 +504,27 @@ footer .personalInfo span:nth-of-type(2) {
         font-weight: 900;
     }
 
-    .introContentLeft .name span:nth-of-type(2){
+    .introContentLeft .name span:nth-of-type(2) {
         margin-left: 2rem;
     }
 
-    .introContentLeft .profession{
+    .introContentLeft .profession {
         font-size: 1rem;
     }
 
     .introContentLeft .about {
-        width: 80%;
-        font-size: 0.8rem;
+        width: 100%;
+        font-size: 1rem;
         font-weight: 200;
+    }
+
+    .introContentLeft .about div {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+        display: flex;
     }
 
     .logo {
@@ -540,11 +552,11 @@ footer .personalInfo span:nth-of-type(2) {
         flex-direction: column;
     }
 
-    .project .leftPart{
+    .project .leftPart {
         width: 100%;
     }
 
-    .project .leftPart video{
+    .project .leftPart video {
         border-radius: 0.5rem;
     }
 
@@ -557,24 +569,26 @@ footer .personalInfo span:nth-of-type(2) {
 
     .project .rightPart .title {
         font-size: 1.2rem;
+        font-weight: 700;
     }
 
     .project .rightPart .description {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        font-weight: 300;
     }
 
-    .project .rightPart .technologies{
+    .project .rightPart .technologies {
         column-gap: 0.5rem;
         row-gap: 0.2;
     }
 
     .project .rightPart .technologies span {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;
-        border-radius: 0.2rem;
+        border-radius: 0.3rem;
     }
 
     /* skill section */
@@ -588,6 +602,10 @@ footer .personalInfo span:nth-of-type(2) {
 
     .skillSection .technologies {
         padding: 0;
+    }
+
+    .skillSection .technologies span {
+        opacity: 0.8;
     }
 
     .technologies .tech img {
