@@ -238,7 +238,7 @@ main .introduction .sidebar {
 }
 
 .projects .project {
-    width: 80%;
+    width: 90%;
     min-height: 10rem;
     border-radius: 0.8rem;
     background-color: #E9E9E9;
@@ -283,7 +283,7 @@ main .introduction .sidebar {
 
 .project .rightPart .title {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 900;
 }
 
@@ -294,8 +294,8 @@ main .introduction .sidebar {
 
 .project .rightPart .description {
     width: 100%;
-    font-size: 1rem;
-    font-weight: 100;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .project .rightPart .technologies {
